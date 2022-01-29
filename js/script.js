@@ -64,6 +64,8 @@ const businessCarousel_sel = document.querySelector('#businessCarousel')
 const businesscarousel = new bootstrap.Carousel(businessCarousel_sel, {
     interval: 5000,
     // wrap: false,
+    
 });
 
 businessCarousel_inner.querySelector(".carousel-item:nth-child(1)").classList.add("active");
+

@@ -31,8 +31,20 @@ body{
     text-transform: capitalize;
 }
 
+h3{
+    font-size: 2rem;
+}
+
+#frame{
+    position: relative;
+}
+
 header{
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
 }
 header #menuBar{
     width: 100%;
@@ -183,6 +195,7 @@ header #slideMenu .wrap .side{
     background-repeat: no-repeat;
     background-size: 5%;
     background-position-x: 50%;
+    /* padding: 1rem 0; */
 }
 #business .wrap{
     width: 100%;
@@ -205,6 +218,8 @@ header #slideMenu .wrap .side{
 
 #businessCarousel{
     width: 100%;
+    height: 20vw;
+    margin-bottom: 20%;
 }
 #businessCarousel .carousel-item{
     text-align: center;
@@ -227,4 +242,259 @@ header #slideMenu .wrap .side{
 }
 #businessCarousel .carousel-item .itemInner p{
     font-size: 1.3em;
+}
+
+#businessCarousel .businessSlideBtn{
+}
+
+.btnIcon{
+    
+}
+
+#imgBanner{
+    width: 100%;
+}
+#imgBanner .wrap{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+#imgBanner .wrap .box{
+    width: calc(100% / 3);
+    height: calc(100vw / 3 - 40px);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#imgBanner .wrap .box:nth-of-type(1){
+    background-image: url(../img/business_img01.jpg);
+}
+#imgBanner .wrap .box:nth-of-type(2){
+    background-image: url(../img/business_img02.jpg);
+}
+#imgBanner .wrap .box:nth-of-type(3){
+    background-image: url(../img/business_img03.jpg);
+}
+#imgBanner .wrap .box .dark{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imgBanner .wrap .box .dark a{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#imgBanner .wrap .box .dark a span.img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/business_over_btn.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+#imgBanner .wrap .box .dark a span.txt{
+    display: block;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#story{
+    width: 100%;
+    margin: 10% 0;
+}
+#story .wrap{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#story .wrap .title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+#story .wrap .title h3{
+    text-transform: capitalize;
+}
+#story .wrap .title p{
+    display: block;
+    font-size: 0.8rem;
+}
+#story .wrap .cont{
+    display: flex;
+}
+#story .wrap .cont .box{
+    padding: 3% 1%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#story .wrap .cont .box .img{
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 1%;
+}
+
+#story .wrap .cont .box:nth-of-type(1) .img{
+    background-image: url(../img/story_img01.jpg);
+}
+#story .wrap .cont .box:nth-of-type(2) .img{
+    background-image: url(../img/story_img02.jpg);
+}
+#story .wrap .cont .box:nth-of-type(3) .img{
+    background-image: url(../img/story_img03.jpg);
+}
+#story .wrap .cont .box .txt{
+    font-size: 0.8rem;
+    text-align: left;
+}
+#story .wrap .cont .box .txtSub{
+    display: none;
+}
+
+#banner{
+    width: 100%;
+    background-image: url(../img/banner_img.jpg);
+    background-position: 50% 50%;
+}
+#banner .wrap{
+    width: 100%;
+    height: calc(100vw / 3 - 40px);
+}
+#banner .wrap .dark{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+#banner .wrap .dark .img{
+    height: 20%;
+}
+#banner .wrap .dark .txt{}
+#banner .wrap .dark a{
+    font-size: 0.8rem;
+    padding: 0 4%;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: calc(1.8rem - 2px)
+}
+
+#content{
+    width: 100%;
+    margin: 10% 0;
+}
+#content .wrap{
+    width: 95%;
+    margin: 0 auto;
+}
+#content .wrap .contentBox{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1.2fr 0.8fr;
+
+}
+#content .wrap .contentBox > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    color: #fff;
+}
+#content .wrap .contentBox > a span{
+    display: block;
+    width: 13%;
+    border-bottom: 3px solid #fff;
+}
+#content .wrap .contentBox > a h4{
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 3% 0;
+    line-height: 1;
+}
+#content .wrap .contentBox > a p{
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    line-height: 1;
+}
+#content .wrap .contentBox .social{
+    grid-column: 1/2;
+    background-color: #f47321;
+
+}
+#content .wrap .contentBox .careers{
+    grid-column: 2/3;
+    background-color: #82a5ae;
+
+}
+#content .wrap .contentBox .info{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    padding: 8% 0;
+}
+#content .wrap .contentBox .info > a{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content .wrap .contentBox .info > a img{
+    margin-bottom: 5%;
+}
+#content .wrap .contentBox .info > a h4{
+    font-size: 1.2rem;
+}
+#content .wrap .contentBox .info > a p{
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+#content .wrap .contentBox .link{
+    grid-column: 1/3;
+    display: grid;
+    gap: 10%;
+}
+#content .wrap .contentBox .link li{
+    border: 1px solid #555;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #555;
+    background-image: url(../img/menu);
+}
+#content .wrap .contentBox .link li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#content .wrap .contentBox .link li a span{
+    right: 0;
 }
