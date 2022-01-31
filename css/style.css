@@ -206,7 +206,7 @@ header #slideMenu .wrap .side{
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 #business .wrap .mainTxt h3{
     font-size: 2rem;
@@ -219,18 +219,25 @@ header #slideMenu .wrap .side{
 #businessCarousel{
     width: 100%;
     height: 20vw;
-    margin-bottom: 20%;
+}
+#businessCarousel{
+    height: 100%;
 }
 #businessCarousel .carousel-item{
     text-align: center;
+    background-color: #fff;
+
 }
 #businessCarousel .carousel-item .itemInner{
     width: 80%;
+    height: 30vw;
+    min-height: 300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+
 }
 #businessCarousel .carousel-item .itemInner a{
     display: block;
@@ -258,12 +265,15 @@ header #slideMenu .wrap .side{
     width: 100%;
     margin: 0 auto;
     display: flex;
+    height: 20vw;
+
 }
 #imgBanner .wrap .box{
     width: calc(100% / 3);
     height: calc(100vw / 3 - 40px);
     background-size: cover;
     background-position: 50% 50%;
+
 }
 #imgBanner .wrap .box:nth-of-type(1){
     background-image: url(../img/business_img01.jpg);
@@ -416,6 +426,7 @@ header #slideMenu .wrap .side{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1.2fr 0.8fr;
+    margin-bottom: 10%;
 
 }
 #content .wrap .contentBox > a{
@@ -464,6 +475,7 @@ header #slideMenu .wrap .side{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #555;
 }
 #content .wrap .contentBox .info > a img{
     margin-bottom: 5%;
@@ -488,13 +500,119 @@ header #slideMenu .wrap .side{
     align-items: center;
     font-size: 1rem;
     color: #555;
-    background-image: url(../img/menu);
+    background-image: url(../img/menu_bar.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
 }
+
 #content .wrap .contentBox .link li a{
     display: block;
     width: 100%;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
 }
 #content .wrap .contentBox .link li a span{
     right: 0;
+}
+#content .wrap .topBtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+footer{
+    width: 100%;
+    background-color: #555555;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+footer .wrap{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+footer .wrap .cont{}
+footer .wrap .cont .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+footer .wrap .cont nav{}
+footer .wrap .cont nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+footer .wrap .cont nav ul li{
+}
+footer .wrap .cont nav ul li a{
+    font-size: 0.7rem;
+}
+footer .wrap .cont nav .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+}
+footer .wrap .cont nav .info address{
+    margin-bottom: 0;
+}
+footer .wrap .cont .link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .wrap .cont .link ul{
+    width: 40%;
+    height: 24px;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .wrap .cont .link ul li{
+    width: calc(100% / 4 - 8%);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+footer .wrap .cont .link ul li a{
+    width: 100%;
+    height: 100%;
+}
+footer .wrap .cont .link ul li a.youtube{
+    background-image: url(../img/sns.png);
+}
+footer .wrap .cont .link ul li a.facebook{
+    background-image: url(../img/sns.png);
+}
+footer .wrap .cont .link ul li a.instagram{
+    background-image: url(../img/sns.png);
+}
+footer .wrap .cont .link ul li a.blog{
+    background-image: url(../img/sns.png);
+}
+footer .wrap .cont .link .family{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+footer .wrap .cont .link .family .body{
+    position: absolute;
+    top: -360px;
+    border: 1px solid #555;
+    display: none;
+}
+footer .wrap .cont .link .family .head{
+    cursor: pointer;
 }

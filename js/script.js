@@ -63,7 +63,7 @@ console.log(businessCase)
 const businessCarousel_sel = document.querySelector('#businessCarousel')
 const businesscarousel = new bootstrap.Carousel(businessCarousel_sel, {
     interval: 5000,
-    // wrap: false,
+    wrap: false,
     
 });
 
