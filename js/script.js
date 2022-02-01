@@ -32,7 +32,13 @@ let carouselCase = "";
 for(let s in slideCon_arr){
     carouselCase += `
         <div class="carousel-item">
-            <img src="./img/${slideCon_arr[s][0]}" class="d-block w-100" alt="${slideCon_arr[s][2]}">
+                <img src="./img/${slideCon_arr[s][0]}" class="d-block w-100" alt="${slideCon_arr[s][2]}">
+            <div class="txt">
+                <h3>${slideCon_arr[s][1]}</h3>
+                <h4>${slideCon_arr[s][2]}</h4>
+                <p>${slideCon_arr[s][3]}</p>
+            <a href="./">more</a>
+        </div>
         </div>
     `;
 }
@@ -57,7 +63,7 @@ for(let b in businessItem){
     `;
 }
 businessCarousel_inner.innerHTML = businessCase;
-console.log(businessCase)
+console.log(businessCase);
 
 
 const businessCarousel_sel = document.querySelector('#businessCarousel')
