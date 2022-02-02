@@ -83,45 +83,45 @@ const navHtmlSource = `
     </li>
     <li>
         <div class="menuBox">
-            <a href="./">careers</a>
+            <a href="./careers.html">careers</a>
             <div class="menuIcon">＋</div>
         </div>
         <ul>
             <li>
-                <a href="./">인재개발</a>
+                <a href="./careers.html">인재개발</a>
             </li>
             <li>
-                <a href="./">인사제도</a>
+                <a href="./careers.html">인사제도</a>
             </li>
             <li>
-                <a href="./">직무소개</a>
+                <a href="./careers.html">직무소개</a>
             </li>
             <li>
-                <a href="./">채용공고</a>
+                <a href="./careers.html">채용공고</a>
             </li>
             <li>
-                <a href="./">채용FAQ</a>
+                <a href="./careers.html">채용FAQ</a>
             </li>
         </ul>
     </li>
     <li>
         <div class="menuBox">
-            <a href="./">customer</a>
+            <a href="./customer.html">customer</a>
             <a class="menuIcon">＋</a>
         </div>
         <ul>
 
         <li>
-                <a href="./">고객문의</a>
+                <a href="customer.html">고객문의</a>
             </li>
             <li>
-                <a href="./">고객문의확인</a>
+                <a href="customer.html">고객문의확인</a>
             </li>
             <li>
-                <a href="./">사이버신문고</a>
+                <a href="customer.html">사이버신문고</a>
             </li>
             <li>
-                <a href="./">FAQ</a>
+                <a href="customer.html">FAQ</a>
             </li>
         </ul>
     </li>
@@ -164,3 +164,9 @@ const facilityItem = [
     ["05_img.png", "특수 시설", "대전 엑스포 한빛탑, 종합운동장, 서울 역사 등 지역의 랜드마크를 만들어 갑니다."],
     ["06_img.png", "리모델링", "시오래된 건물이 꿈에 그리던 아름다운 모습으로 재탄생 합니다."],
 ];
+
+const grantItem = [
+    ["content_img1.jpg", "사회복지", "세상은 함께 하기에 더 아름답고,친구가 있어 더 따뜻합니다.한화는 사회적 배려자를 위한 다양한 사회복지 프로그램을 통해 우리 주변 소외된 이웃과 함께 희망을현실로 만들어가고 있습니다."],
+    ["content_img2.jpg", "문화예술", "세상은 함께 하기에 더 아름답고,친구가 있어 더 따뜻합니다.한화는 사회적 배려자를 위한 다양한 사회복지 프로그램을 통해 우리 주변 소외된 이웃과 함께 희망을현실로 만들어가고 있습니다."],
+    ["content_img3.jpg", "자원봉사", "세상은 함께 하기에 더 아름답고,친구가 있어 더 따뜻합니다.한화는 사회적 배려자를 위한 다양한 사회복지 프로그램을 통해 우리 주변 소외된 이웃과 함께 희망을현실로 만들어가고 있습니다."],
+]

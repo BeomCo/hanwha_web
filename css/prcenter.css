@@ -6,11 +6,11 @@ main{
     background-image: url(../img/prcenter/bg.jpg);
     background-position: 50% 50%;
     min-height: 200px;
-    margin-bottom: 20%;
+    margin-bottom: 50px;
     background-size: cover;
 }
 main .wrap{
-    width: 80%;
+    width: 90%;
     height: 200px;
     position: relative;
     margin: 0 auto;
@@ -25,16 +25,18 @@ main .wrap h3{
 }
 
 .line{
-    margin: 15% 0;
+    margin: 40px 0;
 }
 
 .txtBox{
     width: 100%;
+
 }
 .txtBox .wrap{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
+    padding: 50px 0;
 }
 .txtBox .wrap .bgLogo{
     position: absolute;
@@ -43,7 +45,6 @@ main .wrap h3{
     background-image: url(../img/prcenter/logo.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -54,7 +55,97 @@ main .wrap h3{
 .txtBox .wrap .head h3{
     font-size: 1.3rem;
 }
+.txtBox .wrap .body{
+}
 .txtBox .wrap .body p{
     font-size: 1.4em;
     line-height: 1.6;
+
+}
+
+#grant{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/prcenter/bg2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 600px;
+    margin: 50px 0;
+}
+#grant .wrap{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+}
+#grant .wrap .head{}
+#grant .wrap .head img{
+    position: absolute;
+    height: 280px;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#grant .wrap .body{
+    padding-top: 260px;
+    text-align: center;
+    font-size: 1rem;
+}
+#grant .wrap .body h3{
+    font-size: 1.6em;
+}
+#grant .wrap .body h4{
+    padding: 20px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #f47321;
+}
+#grant .wrap .body p{
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+#grantCont{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+#grantCont .wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+#grantCont .wrap #grantCarousel{
+    font-size: 1rem;
+}
+#grantCont .wrap #grantCarousel .carousel-inner{}
+#grantCont .wrap #grantCarousel .carousel-inner .carousel-item{
+
+}
+#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt{
+    margin-bottom: 20px;
+}
+#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt h3{
+    font-size: 1.4em;
+}
+#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt .line{
+    margin: 20px 0;
+}
+#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt p{
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .img{
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.carouselBtn{
+    width: 100%;
+    position: absolute;
+    bottom: 25vw;
 }

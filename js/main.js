@@ -33,7 +33,7 @@ for(let b in businessItem){
             <div class="itemInner">
                 <a href="./" style="background-image:url(./img/${businessItem[b][0]})"></a>
                 <p>${businessItem[b][1]}</p>
-            </div\
+            </div>
         </div>
     `;
 }
