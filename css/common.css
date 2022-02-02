@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Play', sans-serif;
+    word-break: keep-all;
+
 }
 
 html, body{
@@ -37,4 +39,260 @@ h3{
 
 #frame{
     position: relative;
+}
+
+.line{
+    width: 20%;
+    border-bottom: 4px solid #f47321;
+}
+
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+header #menuBar{
+    width: 100%;
+    height: 90px;
+}
+header #menuBar .wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #menuBar .wrap .logo{}
+header #menuBar .wrap .logo a{}
+header #menuBar .wrap .logo a img{
+    height: 3.6em;
+}
+
+header #menuBar .wrap nav{
+    display: none;
+}
+header #menuBar .wrap .side{
+    display: flex;
+    align-items: center;
+}
+header #menuBar .wrap .side .lang{
+    display: flex;
+    justify-content: space-between;
+    width: 62px;
+}
+header #menuBar .wrap .side .lang a{
+    display: block;
+    height: 26px;
+    width: 26px;
+    background-size: cover;
+}
+header #menuBar .wrap .side .lang a.kr{
+    background-image: url(../img/kor_btn.png);
+}
+header #menuBar .wrap .side .lang a.en{
+    background-image: url(../img/eng_btn.png);
+    background-position: 100% 0;
+}
+
+
+header #menuBar .wrap .side .menu{
+    background-image: url(../img/btn-gnbutil.png);
+    width: 26px;
+    height: 20px;
+    background-size: cover;
+    background-position: 0 0;
+    margin-left: 10px;
+}
+
+header #slideMenu{
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 100;
+    background-color: #fff;
+}
+header #slideMenu.active{
+    max-height: 1000px;
+    transition: max-height 2s;
+}
+header #slideMenu .wrap{
+    width: 80%;
+    padding: 0 10px;
+    margin: 0 auto;
+    
+}
+header #slideMenu .wrap .logo{
+    display: none;
+}
+header #slideMenu .wrap .nav{
+
+}
+header #slideMenu .wrap .nav > ul{
+    width: 100%;
+}
+header #slideMenu .wrap .nav > ul > li{
+    width: 100%;
+    text-transform: uppercase;
+    
+}
+header #slideMenu .wrap .nav > ul > li .menuBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f47321;
+
+}
+header #slideMenu .wrap .nav > ul > li > .menuBox a{
+    width: 100%;
+    font-size: 2em;
+    height: 3.6rem;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+header #slideMenu .wrap .nav > ul > li > .menuBox .menuIcon{
+    font-size: 2.6em;
+    color: #f47321;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+header #slideMenu .wrap .nav > ul > li > ul{
+    margin-top: 1rem;
+    max-height: 0;
+    overflow: hidden;
+}
+header #slideMenu .wrap .nav > ul > li > ul.active{
+    max-height: 600px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+header #slideMenu .wrap .nav > ul > li > ul > li{}
+header #slideMenu .wrap .nav > ul > li > ul > li >a{
+    font-size: 1.4em;
+    line-height: 1.4rem;
+}
+header #slideMenu .wrap .side{
+    display: none;
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: #555555;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+footer .wrap{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+footer .wrap .cont{}
+footer .wrap .cont .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+footer .wrap .cont nav{}
+footer .wrap .cont nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+footer .wrap .cont nav ul li{
+}
+footer .wrap .cont nav ul li a{
+    font-size: 0.7rem;
+}
+footer .wrap .cont nav .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+}
+footer .wrap .cont nav .info address{
+    margin-bottom: 0;
+}
+footer .wrap .cont .link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .wrap .cont .link ul{
+    width: 40%;
+    height: 30px;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .wrap .cont .link ul li{
+    width: 30px;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+footer .wrap .cont .link ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+footer .wrap .cont .link ul li a.youtube{
+    background-image: url(../img/sns.png);
+    background-position: 0%;
+}
+footer .wrap .cont .link ul li a.facebook{
+    background-image: url(../img/sns.png);
+    background-position: -30px;
+}
+footer .wrap .cont .link ul li a.instagram{
+    background-image: url(../img/sns.png);
+    background-position: -60px;
+}
+footer .wrap .cont .link ul li a.blog{
+    background-image: url(../img/sns.png);
+    background-position: -90px;
+}
+footer .wrap .cont .link .family{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+footer .wrap .cont .link .family .body{
+    position: absolute;
+    top: -360px;
+    border: 1px solid #555;
+    display: none;
+}
+footer .wrap .cont .link .family .head{
+    cursor: pointer;
+}
+
+.topBtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+  
+.carousel-item img {
+    object-fit:cover;
+    min-height: 400px;
 }

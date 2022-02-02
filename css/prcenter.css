@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/prcenter/bg.jpg);
+    background-position: 50% 50%;
+    min-height: 200px;
+    margin-bottom: 20%;
+    background-size: cover;
+}
+main .wrap{
+    width: 80%;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .wrap h3{
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.line{
+    margin: 15% 0;
+}
+
+.txtBox{
+    width: 100%;
+}
+.txtBox .wrap{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.txtBox .wrap .bgLogo{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    background-image: url(../img/prcenter/logo.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: opacity(0.4);
+    z-index: -1;
+}
+.txtBox .wrap .head{}
+.txtBox .wrap .head h3{
+    font-size: 1.3rem;
+}
+.txtBox .wrap .body p{
+    font-size: 1.4em;
+    line-height: 1.6;
+}
