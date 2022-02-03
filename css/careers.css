@@ -1,1 +1,179 @@
+@charset "utf-8";
 
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/careers/bg.jpg);
+    background-position: 50% 60%;
+    min-height: 200px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+}
+main .wrap{
+    width: 90%;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .wrap h3{
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+#typeCont{
+    width: 100%;
+}
+#typeCont .wrap{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+#typeCont .wrap .title{}
+#typeCont .wrap .title h3{
+    font-size: 1.4em;
+}
+#typeCont .wrap .title .line{
+    margin: 20px 0;
+}
+
+#typeCarousel{
+    width: 100%;
+}
+#typeCarousel .carousel-inner{
+    width: 100%;
+}
+#typeCarousel .carousel-inner .carousel-item{
+    width: 100%;
+    text-align: center;
+}
+#typeCarousel .carousel-inner .carousel-item .itemWrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#typeCarousel .carousel-inner .carousel-item .img{
+    width: 30vw;
+    height: 30vw;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 40px;
+}
+#typeCarousel .carousel-inner .carousel-item .head{
+    margin-bottom: 40px;
+}
+#typeCarousel .carousel-inner .carousel-item .head h5{
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+#typeCarousel .carousel-inner .carousel-item .head h3{
+    font-size: 1.4em;
+    color: #f47321;
+}
+#typeCarousel .carousel-inner .carousel-item .body{
+    height: 200px;
+}
+#typeCarousel .carousel-inner .carousel-item .body h4{
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+#typeCarousel .carousel-inner .carousel-item .body p{
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #555;
+    /* text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap; */
+}
+
+.carouselBtn{
+    width: 100%;
+    position: absolute;
+    top: 42%;
+}
+
+
+#careersBanner{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/careers/bg2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 50px;
+}
+#careersBanner .wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    color: #fff;
+}
+#careersBanner .wrap .txt{
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+#careersBanner .wrap .txt h3{
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+#careersBanner .wrap .txt .line{
+    margin: 20px 0;
+}
+#careersBanner .wrap .txt p{
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+#careersBanner .wrap .img{}
+#careersBanner .wrap .img img{
+    display: block;
+    height: 240px;
+    margin: 0 auto;
+}
+
+#careersDevelop{}
+#careersDevelop .wrap{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+#careersDevelop .wrap .txt{}
+#careersDevelop .wrap .txt h3{
+    font-size: 1.4em;
+}
+#careersDevelop .wrap .txt .line{
+    margin: 20px 0;
+}
+#careersDevelop .wrap .txt > h4{
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+#careersDevelop .wrap .txt p{
+    font-size: 0.9em;
+}
+#careersDevelop .txt{}
+#careersDevelop .txt .top{
+    display: flex;
+    align-items: center;
+}
+#careersDevelop .txt .top .btn{
+    display: block;
+    font-size: 2em;
+    line-height: 1;
+    padding: 0;
+    border: none;
+}
+#careersDevelop .txt .bottom{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#careersDevelop .txt .bottom.active{
+    max-height: 120px;
+}
