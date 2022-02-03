@@ -143,37 +143,101 @@ main .wrap h3{
     margin: 0 auto;
     font-size: 1rem;
 }
-#careersDevelop .wrap .txt{}
+#careersDevelop .wrap .txt{
+    margin-bottom: 40px;
+}
 #careersDevelop .wrap .txt h3{
     font-size: 1.4em;
 }
 #careersDevelop .wrap .txt .line{
     margin: 20px 0;
 }
-#careersDevelop .wrap .txt > h4{
-    font-size: 1em;
+#careersDevelop .wrap .txt h4{
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 #careersDevelop .wrap .txt p{
     font-size: 0.9em;
+    line-height: 1.6;
 }
-#careersDevelop .txt{}
-#careersDevelop .txt .top{
+#developCarousel{
+    position: relative;
+}
+#careersDevelop .wrap #developCarousel .img{
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 40vw;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#careersDevelop .wrap #developCarousel .img .imgWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#careersDevelop .wrap #developCarousel .img .imgWrap .imgBox{
+    width: 30vw;
+    background-repeat: no-repeat;
+    height: 30vw;
+    background-position: 50% 50%;
+}
+#careersDevelop .wrap #developCarousel .innertxt{
+    margin-bottom: 20px;
+}
+#careersDevelop .wrap #developCarousel .innertxt h3{
+    font-size: 1.4em;
+}
+#careersDevelop .wrap #developCarousel .innertxt .line{
+    margin: 20px 0;
+}
+#careersDevelop .wrap #developCarousel .innertxt > h4{
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+#careersDevelop .wrap #developCarousel .innertxt p{
+    font-size: 0.9em;
+}
+#careersDevelop .wrap #developCarousel .innertxt .top{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #f47321;
 }
-#careersDevelop .txt .top .btn{
+#careersDevelop .wrap #developCarousel .innertxt .top h4{
+    line-height: 2;
+    font-size: 1.2em;
+}
+#careersDevelop .wrap #developCarousel .innertxt .top .btn{
     display: block;
-    font-size: 2em;
+    width: 100%;
+    font-size: 1.6em;
     line-height: 1;
     padding: 0;
     border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #f47321;
 }
-#careersDevelop .txt .bottom{
+#careersDevelop .wrap #developCarousel .innertxt .bottom{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s;
+    transition: max-height 1s, padding 1s;
+    background-color: #f4f4f4;
+    padding: 0 20px;
 }
-#careersDevelop .txt .bottom.active{
-    max-height: 120px;
+#careersDevelop .wrap #developCarousel .innertxt .bottom.active{
+    max-height: 180px;
+    padding: 20px;
+
+}
+
+.carouselBtn{
+    position: absolute;
+    top: 20vw;
+    transform: translateY(-50%);
 }

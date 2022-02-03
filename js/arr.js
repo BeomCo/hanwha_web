@@ -179,9 +179,9 @@ const careersType = [
 
 
 const careersDevelopProgramTitle = [
-    ["icon01.png", "회사 비전 및 가치 공유 프로그램"],
-    ["icon02.png","전문인력 육성 프로그램"],
-    ["icon03.png","GLOBAL 인재 양성 프로그램"],
+    ["icon01.png", "회사 비전 및 가치 공유 프로그램", "img01.jpg"],
+    ["icon02.png","전문인력 육성 프로그램", "img02.jpg"],
+    ["icon03.png","GLOBAL 인재 양성 프로그램", "img03.jpg"],
 ]
 const careersDevelopProgram1 = [
     ["신입사원 조기 전력화 프로그램", "그룹 입문 과정", "건설 입문 과정", "OJT 과정", "Mentoring 제도", "Follow-up 과정", "3급사원 입문 과정"],
