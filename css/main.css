@@ -5,7 +5,7 @@
 
 #carouselExampleControls .carousel-item{
     position: relative;
-
+    font-size: 1rem;
 }
 #carouselExampleControls .carousel-item .txt{
     width: 100%;
@@ -17,18 +17,18 @@
 }
 #carouselExampleControls .carousel-item .txt h3{
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
     line-height: 1;
-    font-size: 2rem;
+    font-size: 1.6em;
 }
 #carouselExampleControls .carousel-item .txt h4{
-    margin-bottom: 2%;
+    margin-bottom: 10px;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1.4em;
 }
 #carouselExampleControls .carousel-item .txt p{
-    margin-bottom: 2%;
-    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-size: 0.9em;
     width: 80%;
 }
 #carouselExampleControls .carousel-item .txt a{
@@ -39,7 +39,7 @@
     justify-content: center;
     color: #fff;
     line-height: 1;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-transform: uppercase;
     border: 1px solid #fff;
 }
@@ -49,7 +49,7 @@
     bottom: 10%;
     left: 5%;
     display: flex;
-    width: 20%;
+    width: 90px;
     justify-content: space-between;
 }
 #carouselExampleControls .carouselBtn img{
@@ -60,35 +60,33 @@
 #business{
     background-image: url(../img/slide_bottom_icon.png);
     background-repeat: no-repeat;
-    background-size: 5%;
+    /* background-size: c; */
     background-position-x: 50%;
     /* padding: 1rem 0; */
 }
 #business .wrap{
     width: 100%;
     height: 100%;
-    padding-top: 20%;
+    padding-top: 100px;
 }
 #business .wrap .mainTxt{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-    /* margin-bottom: 10%; */
+    margin-bottom: 20px;
 }
 #business .wrap .mainTxt h3{
-    font-size: 2rem;
-    margin-bottom: 1%;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 #business .wrap .mainTxt p{
-    font-size: 1.4em;
+    font-size: 0.9em;
 }
 
 #businessCarousel{
     width: 100%;
-    height: 20vw;
-}
-#businessCarousel{
     height: 100%;
+    margin-bottom: 20px;
 }
 #businessCarousel .carousel-item{
     text-align: center;
@@ -96,9 +94,8 @@
 
 }
 #businessCarousel .carousel-item .itemInner{
-    width: 80%;
-    height: 30vw;
-    min-height: 300px;
+    width: 90%;
+    height: 320px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -112,10 +109,10 @@
     height: 128px;
     background-size: cover;
     background-position: 50% 50%;
-    margin-bottom: 5%;
+    margin-bottom: 30px;
 }
 #businessCarousel .carousel-item .itemInner p{
-    font-size: 1.3em;
+    font-size: 0.9em;
 }
 
 #businessCarousel .businessSlideBtn{
@@ -127,19 +124,19 @@
 
 #imgBanner{
     width: 100%;
+    margin-bottom: 50px;
 }
 #imgBanner .wrap{
     width: 100%;
     margin: 0 auto;
     display: flex;
-    height: 20vw;
+    height: 240px;
 }
 #imgBanner .wrap .box{
     width: calc(100% / 3);
-    height: calc(100vw / 3 - 40px);
+    height: 100%;
     background-size: cover;
     background-position: 50% 50%;
-
 }
 #imgBanner .wrap .box:nth-of-type(1){
     background-image: url(../img/business_img01.jpg);
@@ -182,13 +179,13 @@
     color: #fff;
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.9em;
     text-transform: uppercase;
 }
 
 #story{
     width: 100%;
-    margin: 15% 0;
+    margin-bottom: 80px;
 }
 #story .wrap{
     width: 95%;
@@ -197,27 +194,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
+    text-align: center; 
 }
 #story .wrap .title{
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 #story .wrap .title h3{
     text-transform: capitalize;
 }
 #story .wrap .title p{
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9em;
 }
 #story .wrap .cont{
     display: flex;
 }
 #story .wrap .cont .box{
-    padding: 3% 1%;
-    height: 40vw;
+    padding: 5px 5px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -227,10 +224,11 @@
     height: 60%;
     background-size: cover;
     background-position: 50% 50%;
-    margin-bottom: 1%;
+    margin-bottom: 10px;
 }
 #story .wrap .cont .box .txt{
     height: 40%;
+    text-align: center;
 }
 
 #story .wrap .cont .box:nth-of-type(1) .img{
@@ -243,7 +241,7 @@
     background-image: url(../img/story_img03.jpg);
 }
 #story .wrap .cont .box .txt{
-    font-size: 0.8rem;
+    font-size: 0.9em;
     text-align: left;
 }
 #story .wrap .cont .box .txtSub{
@@ -258,7 +256,7 @@
 }
 #banner .wrap{
     width: 100%;
-    height: calc(100vw / 2 - 40px);
+    height: 240px;
 
 }
 #banner .wrap .dark{
@@ -285,11 +283,9 @@
 
 #content{
     width: 100%;
-    margin: 10% 0;
+    margin: 50px 0;
 }
 #content .wrap{
-    width: 95%;
-    margin: 0 auto;
 }
 #content .wrap .contentBox{
     width: 100%;
@@ -309,17 +305,17 @@
 }
 #content .wrap .contentBox > a span{
     display: block;
-    width: 13%;
+    width: 20px;
     border-bottom: 3px solid #fff;
 }
 #content .wrap .contentBox > a h4{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: normal;
-    margin: 3% 0;
+    margin: 10px 0;
     line-height: 1;
 }
 #content .wrap .contentBox > a p{
-    font-size: 0.8rem;
+    font-size: 0.9em;
     text-transform: capitalize;
     line-height: 1;
 }
@@ -338,7 +334,7 @@
     grid-row: 2/3;
     display: flex;
     justify-content: center;
-    padding: 8% 0;
+    padding: 40px 0;
 }
 #content .wrap .contentBox .info > a{
     width: 50%;
@@ -349,19 +345,19 @@
     color: #555;
 }
 #content .wrap .contentBox .info > a img{
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 #content .wrap .contentBox .info > a h4{
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 #content .wrap .contentBox .info > a p{
-    font-size: 0.8rem;
+    font-size: 0.9em;
     text-transform: capitalize;
 }
 #content .wrap .contentBox .link{
     grid-column: 1/3;
     display: grid;
-    gap: 10%;
+    gap: 20px;
 }
 #content .wrap .contentBox .link li{
     border: 1px solid #555;

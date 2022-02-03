@@ -107,7 +107,7 @@ const navHtmlSource = `
     <li>
         <div class="menuBox">
             <a href="./customer.html">customer</a>
-            <a class="menuIcon">＋</a>
+            <div class="menuIcon">＋</div>
         </div>
         <ul>
 

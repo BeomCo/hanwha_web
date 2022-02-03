@@ -54,7 +54,7 @@ projectCarousel_inner.querySelector(".carousel-item:nth-child(1)").classList.add
 
 //facility
 
-const facility_inner = document.querySelector("#facility .container .row");
+const facility_inner = document.querySelector("#facility .outer .row");
 let facilityCase = "";
 
 for(let f in facilityItem){

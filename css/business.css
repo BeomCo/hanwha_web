@@ -5,11 +5,9 @@ main{
     height: 100%;
     background-image: url(../img/business/bg.jpg);
     background-position: 50% 50%;
-    min-height: 200px;
-    margin-bottom: 20%;
+    margin-bottom: 100px;
 }
 main .wrap{
-    width: 80%;
     height: 200px;
     position: relative;
     margin: 0 auto;
@@ -17,10 +15,10 @@ main .wrap{
 main .wrap .titleBox{
     position: absolute;
     background-color: #f47321;
-    width: 110%;
-    height: 160px;
+    width: 100%;
+    height: 180px;
     left: 50%;
-    bottom: -60px;
+    bottom: -70px;
     transform: translateX(-50%);
     color: #fff;
     display: flex;
@@ -28,36 +26,35 @@ main .wrap .titleBox{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    padding: 2% 0;
+    padding: 10px 0;
 }
 
 main .wrap .titleBox .img img{
     display: block;
-    height: 80%;
+    height: 34px;
 }
 main .wrap .titleBox h3{
-    font-size: 1.4rem;
+    font-size: 1.4em;
     font-weight: normal;
 }
 main .wrap .titleBox h3 span{
     text-transform: uppercase;
 }
 main .wrap .titleBox p{
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 .txtBox{
     width: 100%;
     height: 100%;
+    margin: 50px 0;
 }
 .txtBox .wrap{
-    width: 80%;
     height: 100%;
-    margin: 15% auto;
     text-align: center;
 }
 .txtBox .wrap p{
-    font-size: 0.9rem;
+    font-size: 0.9em;
     color: #555;
     line-height: 1.6;
 }
@@ -66,21 +63,20 @@ article #project{
     width: 100%;
 }
 article #project .wrap{
-    width: 80%;
     margin: 0 auto;
 }
 article #project .wrap .title h2{
-    font-size: 1.4rem;    
+    font-size: 1.4em;    
     color: #555;
-    margin-bottom: 4%;
+    margin-bottom: 20px;
 }
 article #project .wrap .title .line{
-    width: 20%;
+    width: 40px;
     border-bottom: 4px solid #f47321;
 }
 article #project .wrap #carousel{
     width: 100%;
-    margin: 10% 0;
+    margin: 40px 0;
 }
 article #project .wrap #carousel #projectCarousel{
     position: relative;
@@ -88,8 +84,8 @@ article #project .wrap #carousel #projectCarousel{
 article #project .wrap #carousel #projectCarousel .carouselBtn{
     position: absolute;
     width: 100%;
-    height: 10%;
-    top: 50%;
+    height: 32px;
+    top: 120px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -98,8 +94,7 @@ article #project .wrap #carousel #projectCarousel .carouselBtn{
 article #project .wrap #carousel #projectCarousel .carousel-inner{}
 article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item{}
 article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .img{
-    height: 50vw;
-    min-height: 300px;
+    height: 240px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -108,7 +103,7 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
     width: 100%;
     background-color: #fff;
     border-bottom: 1px solid #f47321;
-    padding: 5% 0;
+    padding: 20px 0;
 }
 article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt{
     display: flex;
@@ -126,7 +121,7 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.9em;
 }
 article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap{
     width: 100%;
@@ -135,16 +130,16 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
     flex-direction: column;
 }
 article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap .head h3{
-    font-size: 1.4rem;
+    font-size: 1.4em;
 }
 article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap .body{
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    margin: 5% 0;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap .body p{
-    font-size: 0.9rem;
+    font-size: 0.8em;
     font-weight: bold;
 
 }
@@ -158,20 +153,16 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
 #facility{
     width: 100%;
     height: 100%;
+    margin: 50px 0;
 }
 #facility .wrap{
-    width: 80%;
     height: 100%;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 20%;
-
 }
-#facility .wrap .container{
+#facility .wrap .outer{
     width: 100%;
     height: 100%;
 }
-#facility .wrap .container .row{
+#facility .wrap .outer .row{
     width: 100%;
     height: 100%;
     display: grid;
@@ -179,25 +170,24 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
     grid-template-columns: 1fr;
     grid-template-rows: repeat (6, 1fr );
 }
-#facility .wrap .container .row .inner{
+#facility .wrap .outer .row .inner{
+    width: 280px;
     display: block;
     border: 1px solid #d9d9d9;
     border-radius: 10px;
     color: #f47321;
     padding: 0;
+    margin: 0 auto;
 }
-#facility .wrap .container .row .inner .innerWrap{
-    width: 100%;
-    height: 100%;
-    min-height: 200px;
+#facility .wrap .outer .row .inner .innerWrap{
+    height: 260px;
 }
-#facility .wrap .container .row .inner .innerWrap .line{
-    width: 80%;
+#facility .wrap .outer .row .inner .innerWrap .line{
     margin: 10px auto;
     border-bottom: 1px solid #d9d9d9;
 }
-#facility .wrap .container .row .inner .innerWrap .head{
-    width: 80%;
+#facility .wrap .outer .row .inner .innerWrap .head{
+    width: 90%;
     height: 25%;
     display: flex;
     justify-content: center;
@@ -206,19 +196,20 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
     border-bottom: 1px solid #d9d9d9;
     position: relative;
 }
-#facility .wrap .container .row .inner .innerWrap .head h3:nth-child(1){
+#facility .wrap .outer .row .inner .innerWrap .head h3:nth-child(1){
     position: absolute;
     line-height: 1;
     left: 0;
-    font-size: 1.5rem;
+    font-size: 1.4em;
 }
-#facility .wrap .container .row .inner .innerWrap .head h3:nth-child(2){
+#facility .wrap .outer .row .inner .innerWrap .head h3:nth-child(2){
     line-height: 1;
-    font-size: 1.3rem;
+    font-size: 1.4em;
 }
 
 
-#facility .wrap .container .row .inner .innerWrap .body{
+#facility .wrap .outer .row .inner .innerWrap .body{
+    width: 100%;
     height: 75%;
     background-size: cover;
     background-position: 50% 80%;
@@ -227,10 +218,10 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
     display: flex;
     justify-content: center;
 }
-#facility .wrap .container .row .inner .innerWrap .body p{
-    margin-top: 5%;
+#facility .wrap .outer .row .inner .innerWrap .body p{
+    width: 90%;
+    margin-top: 20px;
     height: 50%;
-    width: 60%;
     color: #555;
-    font-size: 1em
+    font-size: 0.9em
 }

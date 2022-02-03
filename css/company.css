@@ -23,7 +23,7 @@ main .wrap{
 
 main .wrap h3{
     position: absolute;
-    font-size: 1rem;
+    font-size: 1em;
     color: #fff;
 }
 
@@ -33,38 +33,40 @@ article{
 }
 article #vision{
     width: 100%;
-    margin: 15% 0;
+    margin: 80px 0;
 }
 article #vision .wrap{
-    width: 80%;
-    margin: 0 auto;
+    text-align: center;
 }
 article #vision .wrap .head{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 }
 article #vision .wrap .head h3{
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 article #vision .wrap .head h2{
     color: #f47321;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: normal;
 }
 article #vision .wrap .body{
     
 }
 article #vision .wrap .body h4{
-    font-size: 1rem;
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 article #vision .wrap .body p{
-    margin-bottom: 5%;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     color: #555;
     line-height: 1.6;
+    margin-bottom: 20px;
 }
 article #vision .wrap .body p:nth-of-type(1){}
 article #vision .wrap .body p:nth-of-type(2){}
@@ -73,21 +75,19 @@ article #vision .wrap .body p:nth-of-type(3){}
 
 #manage{}
 #manage .wrap{
-    width: 100%;
-    margin: 15% auto;
+    margin: 50px auto;
 }
 #manage .wrap .title{
-    width: 80%;
     margin: 0 auto;
-    margin-bottom: 10%;
+    margin-bottom: 40px;
 }
 #manage .wrap .title h2{
-    font-size: 1.4rem;    
+    font-size: 1.4em;    
     color: #555;
-    margin-bottom: 4%;
+    margin-bottom: 20px;
 }
 #manage .wrap .title .line{
-    width: 20%;
+    width: 40px;
     border-bottom: 4px solid #f47321;
 }
 #manage .wrap ul{
@@ -97,11 +97,11 @@ article #vision .wrap .body p:nth-of-type(3){}
     justify-content: center;
 }
 #manage .wrap ul li{
-    width: 100%;
-    height: calc(100% / 3);
+    width: 280px;
+    height: 270px;
     background-image: url(../img/info/img_2.png);
     background-repeat: no-repeat;
-    min-height: 393px;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,18 +124,17 @@ article #vision .wrap .body p:nth-of-type(3){}
     width: 80%;
     max-width: 300px;
     color: #555;
-
 }
 #manage .wrap ul li h4{
-    font-size: 1.8rem;
-    margin-bottom: 1%;
+    font-size: 1.4em;
+    margin-bottom: 10px;
 }
 #manage .wrap ul li h5{
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: normal;
-    margin-bottom: 4%;
+    margin-bottom: 10px;
 }
 #manage .wrap ul li p{
-    font-size: 1rem;
+    font-size: 0.9em;
     color: #888;
 }
