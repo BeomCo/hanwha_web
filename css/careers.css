@@ -10,16 +10,16 @@ main{
     background-repeat: no-repeat;
 }
 main .wrap{
-    width: 90%;
     height: 200px;
     position: relative;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
 main .wrap h3{
-    font-size: 1.2rem;
+    font-size: 1em;
     color: #fff;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
@@ -28,9 +28,6 @@ main .wrap h3{
     width: 100%;
 }
 #typeCont .wrap{
-    width: 90%;
-    margin: 0 auto;
-    font-size: 1rem;
 }
 #typeCont .wrap .title{}
 #typeCont .wrap .title h3{
@@ -42,6 +39,7 @@ main .wrap h3{
 
 #typeCarousel{
     width: 100%;
+    position: relative;
 }
 #typeCarousel .carousel-inner{
     width: 100%;
@@ -59,8 +57,8 @@ main .wrap h3{
     align-items: center;
 }
 #typeCarousel .carousel-inner .carousel-item .img{
-    width: 30vw;
-    height: 30vw;
+    width: 240px;
+    height: 240px;
     margin: 0 auto;
     background-size: cover;
     background-position: 50% 50%;
@@ -97,7 +95,7 @@ main .wrap h3{
 .carouselBtn{
     width: 100%;
     position: absolute;
-    top: 42%;
+    top: 120px;
 }
 
 
@@ -137,11 +135,11 @@ main .wrap h3{
     margin: 0 auto;
 }
 
-#careersDevelop{}
+#careersDevelop{
+    margin-bottom: 50px;
+}
 #careersDevelop .wrap{
-    width: 90%;
-    margin: 0 auto;
-    font-size: 1rem;
+
 }
 #careersDevelop .wrap .txt{
     margin-bottom: 40px;
@@ -166,21 +164,25 @@ main .wrap h3{
 #careersDevelop .wrap #developCarousel .img{
     background-size: cover;
     background-position: 50% 50%;
-    height: 40vw;
+    height: 240px;
     color: #fff;
     margin-bottom: 20px;
 }
 #careersDevelop .wrap #developCarousel .img .imgWrap{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 #careersDevelop .wrap #developCarousel .img .imgWrap .imgBox{
-    width: 30vw;
+    width: 64px;
+    height: 64px;
     background-repeat: no-repeat;
-    height: 30vw;
+    background-size: cover;
     background-position: 50% 50%;
+    margin-bottom: 20px;
 }
 #careersDevelop .wrap #developCarousel .innertxt{
     margin-bottom: 20px;
@@ -236,8 +238,3 @@ main .wrap h3{
 
 }
 
-.carouselBtn{
-    position: absolute;
-    top: 20vw;
-    transform: translateY(-50%);
-}

@@ -19,7 +19,7 @@ main .wrap{
     align-items: center;
 }
 main .wrap h3{
-    font-size: 1.2rem;
+    font-size: 1em;
     color: #fff;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
@@ -33,15 +33,13 @@ main .wrap h3{
 
 }
 .txtBox .wrap{
-    width: 90%;
-    margin: 0 auto;
     position: relative;
     padding: 50px 0;
 }
 .txtBox .wrap .bgLogo{
     position: absolute;
-    width: 50vw;
-    height: 50vw;
+    width: 240px;
+    height: 240px;
     background-image: url(../img/prcenter/logo.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -53,12 +51,12 @@ main .wrap h3{
 }
 .txtBox .wrap .head{}
 .txtBox .wrap .head h3{
-    font-size: 1.3rem;
+    font-size: 1.4em;
 }
 .txtBox .wrap .body{
 }
 .txtBox .wrap .body p{
-    font-size: 1.4em;
+    font-size: 0.90em;
     line-height: 1.6;
 
 }
@@ -73,8 +71,6 @@ main .wrap h3{
     margin: 50px 0;
 }
 #grant .wrap{
-    width: 90%;
-    margin: 0 auto;
     color: #fff;
     position: relative;
 }
@@ -89,7 +85,7 @@ main .wrap h3{
 #grant .wrap .body{
     padding-top: 260px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
 }
 #grant .wrap .body h3{
     font-size: 1.6em;
@@ -111,11 +107,9 @@ main .wrap h3{
     margin-bottom: 50px;
 }
 #grantCont .wrap{
-    width: 90%;
-    margin: 0 auto;
 }
 #grantCont .wrap #grantCarousel{
-    font-size: 1rem;
+    font-size: 0.9em;
 }
 #grantCont .wrap #grantCarousel .carousel-inner{}
 #grantCont .wrap #grantCarousel .carousel-inner .carousel-item{
@@ -136,8 +130,8 @@ main .wrap h3{
 }
 #grantCont .wrap #grantCarousel .carousel-inner .carousel-item .img{
     display: block;
-    width: 50vw;
-    height: 50vw;
+    width: 240px;
+    height: 240px;
     background-size: cover;
     background-position: 50% 50%;
     border-radius: 50%;
@@ -146,5 +140,5 @@ main .wrap h3{
 .carouselBtn{
     width: 100%;
     position: absolute;
-    bottom: 25vw;
+    bottom: 120px;
 }
