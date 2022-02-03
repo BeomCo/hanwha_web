@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/customer/bg.jpg);
+    background-position: 90% 50%;
+    min-height: 200px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .wrap{
+    width: 90%;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .wrap h3{
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.txtBox{
+    margin-bottom: 50px;
+}
+.txtBox .wrap{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.txtBox .wrap h3{
+    font-size: 1.4em;
+}
+.txtBox .wrap .line{
+    margin: 20px 0;
+}
+.txtBox .wrap h4{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.txtBox .wrap p{
+    font-size: 0.9em;
+}
+
+.dreamGreen{
+    margin-bottom: 100px;
+}
+.dreamGreen .wrap{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.dreamGreen .wrap .head{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.dreamGreen .wrap .head h4{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.dreamGreen .wrap .head .headLink{
+    display: flex;
+    justify-content: flex-end;
+}
+.dreamGreen .wrap .head .headLink a{
+    width: 140px;
+    line-height: 50px;
+    background-color: #f47321;
+    text-align: center;
+    color: #fff;
+}
+
+.dreamGreen .wrap .body{
+    display: flex;
+    justify-content: space-between;
+}
+.dreamGreen .wrap .body .box{
+    width: calc(100% / 3 - 1%);
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #888;
+}
+.dreamGreen .wrap .body .box .dreamGreenTxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.dreamGreen .wrap .body .box .dreamGreenTxt.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.dreamGreen .wrap .body .box .dreamGreenTxt.first p{
+    line-height: 1;
+    font-weight: bold;
+}
+.dreamGreen .wrap .body .box .dreamGreenTxt .innerTxt p{
+}
+.dreamGreen .wrap .body .box .dreamGreenTxt h6{
+    font: 1em;
+    width: 60%;
+}
+.dreamGreen .wrap .body .box .dreamGreenTxt h5{
+    font-size: 1.2em;
+}
+.dreamGreen .wrap .body .box .dreamGreenTxt span{
+    font-size: 1.2em;
+}
+.dreamGreen .wrap .body .box .dreamGreenIcon{
+    width: 8vw;
+    height: 8vw;
+    background: no-repeat;
+    background-size: cover;
+    min-height: 40px;
+    min-width: 40px;
+}
+.dreamGreen .wrap .body .box:nth-child(1) .dreamGreenIcon{
+    background-image: url(../img/customer/icon01.png);
+    display: none;
+}
+.dreamGreen .wrap .body .box:nth-child(2) .dreamGreenIcon{
+    background-image: url(../img/customer/icon02.png);
+}
+.dreamGreen .wrap .body .box:nth-child(3) .dreamGreenIcon{
+    background-image: url(../img/customer/icon03.png);
+}
+
+
+#privacy{}
+#privacy .wrap{}
+#privacy .wrap .progressBar{
+    margin-bottom: 30px;
+}
+#privacy .wrap .progressBar ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#privacy .wrap .progressBar ul li::before{
+    content: "";
+    display: block;
+    width: 5%;
+    height: 100%;
+    background-image: url(../img/customer/txt_bar_left_grey.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: auto 100%;
+    position: absolute;
+    left: 0;
+}
+#privacy .wrap .progressBar ul li{
+    width: calc(100%);
+    height: 40px;
+    position: relative;
+    text-align: center;
+    /* margin: 20px 0; */
+}
+#privacy .wrap .progressBar ul li::after{
+    content: "";
+    display: block;
+    width: 5%;
+    height: 100%;
+    background-image: url(../img/customer/txt_bar_right_grey.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: auto 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#privacy .wrap .progressBar ul li.progOrange p{
+    background-color: #f47321;
+    color: #fff;
+}
+#privacy .wrap .progressBar ul li.progOrange::before{
+    background-image: url(../img/customer/txt_bar_left.png);
+}
+#privacy .wrap .progressBar ul li.progOrange::after{
+    background-image: url(../img/customer/txt_bar_right.png);
+}
+#privacy .wrap .progressBar ul li p{
+    background-color: #e7e7e7;
+    height: 100%;
+    line-height: 40px;
+    margin: 0 12px;
+    color: #f47321;
+    font-size: 0.9em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+#privacy .wrap .terms{}
+#privacy .wrap .terms .head{
+    margin-bottom: 30px;
+}
+#privacy .wrap .terms .head h3{
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+#privacy .wrap .terms .head p{
+    font-size: 0.9em;
+}
+#privacy .wrap .terms .head p{
+}
+
+#privacy .wrap .terms .body .scrollBox{
+    background-color: #e7e7e7;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+#privacy .wrap .terms .body .scrollBox p{
+    height: 380px;
+}
+
+#privacy .wrap .terms .body .agree{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+#privacy .wrap .terms .body .agree h5{
+    font-size: 0.9em;
+}
+#privacy .wrap .terms .body .agree .selBtn{
+    display: flex;
+    align-items: center;
+}
+#privacy .wrap .terms .body .agree .selBtn input:nth-child(2){
+    margin-left: 10px;
+    line-height: 1;
+}
