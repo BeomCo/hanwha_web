@@ -137,3 +137,40 @@ function slideMenu_main(){
 menuIcon.addEventListener('click', ()=>{
     slideMenu_main();
 });
+
+
+//캐러셀 반응형
+const width = ()=>{
+    return innerWidth;
+}
+const carouselControl = {
+    deactive : ()=>{
+        const innerItemSel = document.querySelectorAll(".inner-item");
+        for(let cc of innerItemSel){
+            cc.classList.remove("carousel-item");
+            document.querySelector(".inner-item").closest(".slide").querySelector(".carouselBtn").style.display = "none";
+        };
+    },
+    active : ()=>{
+        const innerItemSel = document.querySelectorAll(".inner-item");
+        for(let cc of innerItemSel){
+            cc.classList.add("carousel-item");
+            document.querySelector(".inner-item").closest(".slide").querySelector(".carouselBtn").style.display = "block";
+    }
+    },
+};
+
+addEventListener('resize', ()=>{
+    if(width() >= 768){
+        carouselControl.deactive();
+    }else if(width() < 768){
+        carouselControl.active();
+    }
+});
+addEventListener('load', ()=>{
+    if(width() >= 768){
+        carouselControl.deactive();
+    }else if(width() < 768){
+        carouselControl.active();
+    }
+});

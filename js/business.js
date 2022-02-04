@@ -5,7 +5,7 @@ let projectCase = "";
 
 for(let p in projectItem){
     projectCase += `
-        <div class="carousel-item">
+        <div class="carousel-item inner-item">
             <div class="itemInner">
                 <div class="img" style="background-image:url(./img/business/${projectItem[p][0]})"></div>
                 <div class="cont">

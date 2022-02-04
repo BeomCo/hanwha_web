@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+
+@media(min-width: 768px){
+    /* main */
+    .wrap{
+        font-size: 1rem;
+    }
+
+    #carouselExampleControls .carousel-item{
+        font-size: 1.2rem;
+    }
+
+    #businessCarousel .carousel-inner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #story .wrap .cont .box:last-child{
+        display: block;
+    }
+   
+    #story .wrap .cont .box .img{
+        height: 160px;
+        margin-bottom: 20px;
+    }
+    #story .wrap .cont .box .txt{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #story .wrap .cont .box .txtSub{
+        display: block;
+        font-size: 0.9em;
+    }
+
+    #content .wrap .contentBox{
+        height: 420px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+    }
+    #content .wrap .contentBox .social{
+        
+    }
+    #content .wrap .contentBox .careers{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #content .wrap .contentBox .info{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    #content .wrap .contentBox .link{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #content .wrap .contentBox .link li{
+        width: 280px;
+        height: 40px;
+    }
+
+
+    /* company */
+    #vision .wrap .head{
+        font-size: 1.5rem;
+    }
+
+    #manage .wrap ul{
+        flex-direction: row;
+    }
+    #manage .wrap ul li{
+        width: 220px;
+        height: 228px;
+        background-image: url(../img/info/img.png);
+        position: relative;
+    }
+    #manage .wrap ul li:nth-of-type(1){
+        background-position: 0% 0;
+    }
+    #manage .wrap ul li:nth-of-type(2){
+        background-position: 50% 0;
+        
+    }
+    #manage .wrap ul li:nth-of-type(3){
+        background-position: 100% 0;
+    }
+    #manage .wrap ul li h4{
+        margin-top: 85px;
+    }
+    #manage .wrap ul li h5{
+        font-size: 0.7em;
+    }
+    #manage .wrap ul li p{
+        margin-top: 110px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .topBtn.company{
+        margin-top: 160px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+}

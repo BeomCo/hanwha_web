@@ -6,7 +6,7 @@ let grantCase = "";
 
 for(let g in grantItem){
     grantCase += `
-        <div class="carousel-item">
+        <div class="carousel-item inner-item">
             <div class="txt">
                 <h3>${grantItem[g][1]}</h3>
                 <div class="line"></div>

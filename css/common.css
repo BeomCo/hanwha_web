@@ -52,6 +52,22 @@ h3{
     font-size: 1rem;
 }
 
+.navList {
+    margin-top: 20px;
+}
+.navList .wrap{
+    text-align: right;
+}
+.navList .wrap a{
+    font-size: 0.9em;
+}
+.navList .wrap span{
+    font-size: 0.8em;
+}
+.navList a:last-child{
+    font-weight: bold;
+}
+
 header{
     width: 100%;
     position: sticky;

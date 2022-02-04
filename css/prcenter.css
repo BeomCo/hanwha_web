@@ -112,23 +112,23 @@ main .wrap h3{
     font-size: 0.9em;
 }
 #grantCont .wrap #grantCarousel .carousel-inner{}
-#grantCont .wrap #grantCarousel .carousel-inner .carousel-item{
+#grantCont .wrap #grantCarousel .carousel-inner .inner-item{
 
 }
-#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt{
+#grantCont .wrap #grantCarousel .carousel-inner .inner-item .txt{
     margin-bottom: 20px;
 }
-#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt h3{
+#grantCont .wrap #grantCarousel .carousel-inner .inner-item .txt h3{
     font-size: 1.4em;
 }
-#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt .line{
+#grantCont .wrap #grantCarousel .carousel-inner .inner-item .txt .line{
     margin: 20px 0;
 }
-#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .txt p{
+#grantCont .wrap #grantCarousel .carousel-inner .inner-item .txt p{
     font-size: 0.9em;
     line-height: 1.6;
 }
-#grantCont .wrap #grantCarousel .carousel-inner .carousel-item .img{
+#grantCont .wrap #grantCarousel .carousel-inner .inner-item .img{
     display: block;
     width: 240px;
     height: 240px;

@@ -29,7 +29,7 @@ let businessCase = "";
 
 for(let b in businessItem){
     businessCase += `
-        <div class="carousel-item">
+        <div class="carousel-item inner-item">
             <div class="itemInner">
                 <a href="./" style="background-image:url(./img/${businessItem[b][0]})"></a>
                 <p>${businessItem[b][1]}</p>

@@ -92,27 +92,27 @@ article #project .wrap #carousel #projectCarousel .carouselBtn{
     justify-content: space-between;
 }
 article #project .wrap #carousel #projectCarousel .carousel-inner{}
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item{}
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .img{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item{}
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .img{
     height: 240px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont{
     width: 100%;
     background-color: #fff;
     border-bottom: 1px solid #f47321;
     padding: 20px 0;
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont .txt{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt a{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont .txt a{
     display: block;
     background-color: #f47321;
     color: #fff;
@@ -123,30 +123,30 @@ article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item
     justify-content: center;
     font-size: 0.9em;
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont .txt .txtWrap{
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap .head h3{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont .txt .txtWrap .head h3{
     font-size: 1.4em;
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap .body{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont .txt .txtWrap .body{
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin: 20px 0;
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap .body p{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont .txt .txtWrap .body p{
     font-size: 0.8em;
     font-weight: bold;
 
 }
-article #project .wrap #carousel #projectCarousel .carousel-inner .carousel-item .itemInner .cont .txt .txtWrap .body p span{
+article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item .itemInner .cont .txt .txtWrap .body p span{
     font-weight: normal;
 }
-#projectCarousel .carousel-inner .carousel-item:nth-of-type(2) .itemInner .cont .txt .txtWrap .body .bottom p:nth-of-type(2){
+#projectCarousel .carousel-inner .inner-item:nth-of-type(2) .itemInner .cont .txt .txtWrap .body .bottom p:nth-of-type(2){
     display: none;
 }
 
