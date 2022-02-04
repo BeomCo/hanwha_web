@@ -1,10 +1,8 @@
 const navHtmlSource = `
 <ul>
     <li>
-        <div class="menuBox">
+            <div class="line"></div>
             <a class="hanec" href="./company.html">hanwha e&c</a>
-            <div class="menuIcon">＋</div>
-        </div>
         <ul>
             <li>
                 <a href="./company.html">경영이념</a>
@@ -30,10 +28,8 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-        <div class="menuBox">
+            <div class="line"></div>
             <a href="./business.html">business</a>
-            <div class="menuIcon">＋</div>
-        </div>
         <ul>
             <li>
                 <a href="./business.html">토목 사업</a>
@@ -53,10 +49,8 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-        <div class="menuBox">
+            <div class="line"></div>
             <a href="./prcenter.html">pr center</a>
-            <div class="menuIcon">＋</div>
-        </div>
         <ul>
             <li>
                 <a href="./prcenter.html">사회공헌</a>
@@ -82,10 +76,8 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-        <div class="menuBox">
+            <div class="line"></div>
             <a href="./careers.html">careers</a>
-            <div class="menuIcon">＋</div>
-        </div>
         <ul>
             <li>
                 <a href="./careers.html">인재개발</a>
@@ -105,10 +97,8 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-        <div class="menuBox">
+            <div class="line"></div>
             <a href="./customer.html">customer</a>
-            <div class="menuIcon">＋</div>
-        </div>
         <ul>
 
         <li>
@@ -127,6 +117,138 @@ const navHtmlSource = `
     </li>
 </ul>
 `;
+
+const navHtmlScrollSource = `
+
+<ul>
+    <li>
+        <span class="menuBox">
+            <a class="hanec" href="./company.html">hanwha e&c</a>
+            <span class="menuIcon">＋</span>
+        </span>
+        <ul>
+            <li>
+                <a href="./company.html">경영이념</a>
+            </li>
+            <li>
+                <a href="./company.html">연혁</a>
+            </li>
+            <li>
+                <a href="./company.html">조직도</a>
+            </li>
+            <li>
+                <a href="./company.html">재무정보</a>
+            </li>
+            <li>
+                <a href="./company.html">CI</a>
+            </li>
+            <li>
+                <a href="./company.html">BI</a>
+            </li>
+            <li>
+                <a href="./company.html">찾아오시는길</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="menuBox">
+            <a href="./business.html">business</a>
+            <span class="menuIcon">＋</span>
+        </span>
+        <ul>
+            <li>
+                <a href="./business.html">토목 사업</a>
+            </li>
+            <li>
+                <a href="./business.html">건축 사업</a>
+            </li>
+            <li>
+                <a href="./business.html">주택 사업</a>
+            </li>
+            <li>
+                <a href="./business.html">플랜트 사업</a>
+            </li>
+            <li>
+                <a href="./business.html">기술연구소</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="menuBox">
+            <a href="./prcenter.html">pr center</a>
+            <span class="menuIcon">＋</span>
+        </span>
+        <ul>
+            <li>
+                <a href="./prcenter.html">사회공헌</a>
+            </li>
+            <li>
+                <a href="./prcenter.html">공익사업</a>
+            </li>
+            <li>
+                <a href="./prcenter.html">활동내용</a>
+            </li>
+            <li>
+                <a href="./prcenter.html">윤리경영</a>
+            </li>
+            <li>
+                <a href="./prcenter.html">공지사항</a>
+            </li>
+            <li>
+                <a href="./prcenter.html">사내소식</a>
+            </li>
+            <li>
+                <a href="./prcenter.html">홍보자료실</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="menuBox">
+            <a href="./careers.html">careers</a>
+            <span class="menuIcon">＋</span>
+        </span>
+        <ul>
+            <li>
+                <a href="./careers.html">인재개발</a>
+            </li>
+            <li>
+                <a href="./careers.html">인사제도</a>
+            </li>
+            <li>
+                <a href="./careers.html">직무소개</a>
+            </li>
+            <li>
+                <a href="./careers.html">채용공고</a>
+            </li>
+            <li>
+                <a href="./careers.html">채용FAQ</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="menuBox">
+            <a href="./customer.html">customer</a>
+            <span class="menuIcon">＋</span>
+        </span>
+        <ul>
+
+        <li>
+                <a href="customer.html">고객문의</a>
+            </li>
+            <li>
+                <a href="customer.html">고객문의확인</a>
+            </li>
+            <li>
+                <a href="customer.html">사이버신문고</a>
+            </li>
+            <li>
+                <a href="customer.html">FAQ</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+`
 
 // const slideCon_arr = [
 //     {img:"main_slide01.jpg", title:"Aqua planet", sub:"일산 아쿠아 플라넷", des:"한화건설의 모든 건축물들은 인간 중심의 첨단 기술을 바탕으로예술성과 기능이 조화를 이룬 공간입니다."},

@@ -7,7 +7,14 @@
         content: none;
     }
 
-
+    header #menuBar .wrap{
+        width: 100%;
+    }
+    header #menuBar .wrap nav{
+        display: block;
+    }
+    
+    
     /* main */
     .wrap{
         font-size: 1rem;
@@ -25,7 +32,7 @@
     #story .wrap .cont .box:last-child{
         display: block;
     }
-   
+
     #story .wrap .cont .box .img{
         height: 160px;
         margin-bottom: 20px;
@@ -221,5 +228,360 @@
         height: 64px;
     }
     
+
+    /* customer */
+    
+    #privacy .wrap .progressBar ul li:nth-child(2){
+        display: block;
+    }
+    #privacy .wrap .progressBar ul li:nth-child(3){
+        display: block;
+    }
+
+    #cert .wrap .body{
+        height: 240px;
+        padding: 30px;
+    }
+    #cert .wrap .body .txtBody{
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    }
+    #cert .wrap .body .btnBody{
+        align-items: flex-end;
+    }
+    #cert .wrap .certBtn{
+        width: 320px;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media(min-width:1200px){
+    /* common */
+
+    .wrap{
+        width: 1200px;
+    }
+
+    header #menuBar .wrap{
+        width: 1200px;
+    }
+    header #menuBar .wrap .side{
+        display: none;
+    }
+    header #menuBar .wrap nav > ul > li{
+        width: 140px;
+    }
+
+
+
+
+
+
+    /* main */
+
+    .wrap{
+
+
+    }
+
+
+    #business{
+        padding: 120px 0;
+    }
+
+    #businessCarousel .carousel-inner{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #content .wrap .contentBox{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 0.3fr;
+    }
+
+    #content .wrap .contentBox .social{
+        display: flex;
+        justify-content: space-between;
+        height: 240px;
+    }
+    #content .wrap .contentBox .social .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #content .wrap .contentBox .social .left .bottom{
+        display: block;
+    }
+    #content .wrap .contentBox .social .left .bottom p{
+        line-height: 1.4;
+    }
+    #content .wrap .contentBox .social .right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    #content .wrap .contentBox .social .right img{
+        height: 128px;
+    }
+    #content .wrap .contentBox .careers{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background-image: url(../img/career_img.jpg);
+        background-size: cover;
+        height: 240px;
+    }
+    #content .wrap .contentBox .info{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 0;
+        height: 240px;
+    }
+    #content .wrap .contentBox .link{
+        margin-top: 20px;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #content .wrap .contentBox .link li{
+        width: calc(1200px / 3);
+    }
+
+
+
+
+
+    /* company */
+
+    main.company{
+        margin-bottom: 20px;
+    }
+    main .wrap h3{
+        font-size: 1.4em;
+    }
+
+    #vision .wrap .head{
+        font-size: 1.8rem;
+    }
+    #vision .wrap .head h3{
+        font-size: 1em;
+    }
+
+    #manage .wrap ul{
+        flex-direction: row;
+    }
+    #manage .wrap ul li{
+        width: 360px;
+        height: 373px;
+        background-image: url(../img/info/img.png);
+        position: relative;
+        justify-content: flex-start;
+    }
+    #manage .wrap ul li:nth-of-type(1){
+        background-position: 0% 0;
+    }
+    #manage .wrap ul li:nth-of-type(2){
+        background-position: 50% 0;
+        
+    }
+    #manage .wrap ul li:nth-of-type(3){
+        background-position: 100% 0;
+    }
+    #manage .wrap ul li h4{
+        margin-top: 130px;
+    }
+    #manage .wrap ul li h5{
+        font-size: 0.7em;
+    }
+    #manage .wrap ul li p{
+        margin-top: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .topBtn.company{
+        margin-top: 160px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+    /* business */
+
+    main{
+        height: 320px;
+        margin-bottom: 120px;
+    }
+    main.business .wrap{
+        width: 100%;
+    }
+
+    main .wrap .titleBox{
+        width: 100%;
+        bottom: -220px;
+    }
+    
+    #facility .wrap .outer .row{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+
+
+
+
+    /* prcenter */
+
+
+    .txtBox.prcenter{
+        width: 100%;
+    
+    }
+    .txtBox.prcenter .wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .txtBox.prcenter .wrap .left{
+        width: 70%;
+    }
+    .txtBox.prcenter .wrap .right{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .txtBox.prcenter .wrap .bgLogo{
+        position: static;
+        width: 240px;
+        height: 240px;
+        background-image: url(../img/prcenter/logo.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        transform: translate(0, 0);
+        filter: opacity(1);
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    .txtBox.prcenter .wrap .head{}
+    .txtBox.prcenter .wrap .head h3{
+        font-size: 1.4em;
+    }
+    .txtBox.prcenter .wrap .body{
+    }
+    .txtBox.prcenter .wrap .body p{
+        font-size: 0.90em;
+        line-height: 1.6;
+    
+    }
+
+    main.prcenter{
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    /* careers */
+
+    #grant{
+        height: 400px;
+    }
+    #grant .wrap{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #grant .wrap .head{
+        width: 512px;
+    }
+    #grant .wrap .head img{
+        left: 30%;
+        height: 320px;
+    }
+    #grant .wrap .body{
+        padding-top: 0;
+        width: 512px;
+        height: 200px;
+    }
+
+    #grantCont .wrap #grantCarousel .carousel-inner .inner-item .img{
+        width: 300px;
+        height: 300px;
+    }
+
+    main.careers{
+        background-position: 50% 100%;
+        margin-bottom: 20px;
+    }
+    #careersDevelop .wrap #developCarousel .img{
+        height: 240px;
+    }
+
+
+
+    /* customer */
+
+
+    main.customer{
+        margin-bottom: 20px;
+    }
+
+
+    #cert .wrap .body{
+        height: 120px;
+        padding: 20px;
+        flex-direction: row;
+    }
+    #cert .wrap .body .txtBody{
+        width: 1600px;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        flex-direction: row;
+    }
+    #cert .wrap .body .txtBody img{
+        margin-bottom: 0;
+    }
+    #cert .wrap .body .txtBody .p1{
+        margin-bottom: 0;
+    }
+    #cert .wrap .body .txtBody .p2{
+        margin-bottom: 0;
+    }
+
+    #cert .wrap .body .btnBody{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    #cert .wrap .certBtn{
+        width: 320px;
+        margin: 0 auto;
+    }
 
 }

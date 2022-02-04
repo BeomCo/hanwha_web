@@ -118,7 +118,7 @@ const navHtml = document.querySelector(".nav");
 const subNavHtml = document.querySelector(".slideNav");
 
 navHtml.innerHTML = navHtmlSource;
-subNavHtml.innerHTML = navHtmlSource;
+subNavHtml.innerHTML = navHtmlScrollSource;
 
 
 // 메뉴 슬라이더
@@ -143,8 +143,11 @@ menuIcon.addEventListener('click', ()=>{
 const width = ()=>{
     return innerWidth;
 }
+const carouselBtn = document.querySelectorAll(".carouselBtn");
 const carouselBtnSel = document.querySelectorAll(".carouselBtn button");
 const carouselBtnImgSel = document.querySelectorAll(".carouselBtn img");
+const carouselImgFix = document.querySelectorAll("#carouselExampleControls .carouselBtn img");
+
 const carouselControl = {
     deactive : ()=>{
         const innerItemSel = document.querySelectorAll(".inner-item");
@@ -157,6 +160,12 @@ const carouselControl = {
         for(let cb of carouselBtnSel){
             cb.style.display = "none";
         };
+        for(let cf of carouselImgFix){
+            cf.style.display = "block";
+        };
+        for(let cbd of carouselBtn){
+            cbd.style.zIndex = "-1";
+        }
     },
     active : ()=>{
         const innerItemSel = document.querySelectorAll(".inner-item");
@@ -169,6 +178,9 @@ const carouselControl = {
         for(let cb of carouselBtnSel){
             cb.style.display = "block";
         };
+        for(let cbd of carouselBtn){
+            cbd.style.zIndex = "1";
+        }
     },
 };
 
@@ -186,3 +198,25 @@ addEventListener('load', ()=>{
         carouselControl.active();
     }
 });
+
+
+
+
+//top 버튼
+
+const upArrow = document.querySelectorAll(".topBtn img");
+const mainSection = document.querySelector("header").offsetTop;
+
+
+for(let u of upArrow){
+    u.addEventListener('click', (e)=>{
+            clickDownScroll();
+    })
+}
+function clickDownScroll(){
+    window.scroll({top:mainSection, behavior: 'smooth'});
+}
+
+
+
+

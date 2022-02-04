@@ -78,10 +78,9 @@ header{
 }
 header #menuBar{
     width: 100%;
-    height: 90px;
+    height: 80px;
 }
 header #menuBar .wrap{
-    width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 0 10px;
@@ -96,9 +95,80 @@ header #menuBar .wrap .logo a img{
     height: 33px;
 }
 
+
+
+
+
+
+/* 메뉴바 nav */
+
+header #menuBar .wrap nav{
+}
 header #menuBar .wrap nav{
     display: none;
+    
 }
+header #menuBar .wrap nav > ul{
+    display: flex;
+    justify-content: center;
+}
+header #menuBar .wrap nav > ul{}
+header #menuBar .wrap nav > ul > li{
+    width: 100px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    /* overflow: hidden; */
+}
+header #menuBar .wrap nav > ul > li > a{
+    display: block;
+    line-height: 80px;
+    color: #000;
+}
+
+header #menuBar .wrap nav > ul > li > ul{
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+header #menuBar .wrap nav > ul > li > ul > li{
+    display: block;
+}
+header #menuBar .wrap nav > ul > li > ul li:last-child{
+    padding-bottom: 10px;
+}
+
+header #menuBar .wrap nav > ul > li > ul > li > a{
+    display: block;
+    line-height: 40px;
+    color: #000;
+}
+header #menuBar .wrap nav > ul > li:hover{
+    background-color: #eeeeee;
+}
+header #menuBar .wrap nav > ul > li:hover > ul{
+    max-height: 300px;
+    background-color: #eeeeee;
+}
+header #menuBar .wrap nav > ul > li .line{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
 header #menuBar .wrap .side{
     display: flex;
     align-items: center;
@@ -135,7 +205,7 @@ header #menuBar .wrap .side .menu{
 header #slideMenu{
     width: 100%;
     position: absolute;
-    top: 90px;
+    top: 80px;
     max-height: 0;
     overflow: hidden;
     z-index: 100;
@@ -308,6 +378,7 @@ footer .wrap .cont .link .family .head{
 }
 
 .topBtn{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -318,3 +389,21 @@ footer .wrap .cont .link .family .head{
     object-fit:cover;
     min-height: 400px;
 }
+
+
+/* 마우스 오버 */
+
+header #menuBar .wrap nav > ul > li a.hover{
+    color: #f47321;
+
+}
+
+header #menuBar .wrap nav > ul > li > ul > li > a.hover{
+}
+
+#businessCarousel .inner-item .itemInner a:nth-child(1).hover{
+    background-image: url(../img/main_icon01_on.png);
+}
+
+
+

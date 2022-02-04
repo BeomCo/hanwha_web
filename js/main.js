@@ -50,3 +50,33 @@ const businesscarousel = new bootstrap.Carousel(businessCarousel_sel, {
 
 businessCarousel_inner.querySelector(".carousel-item:nth-child(1)").classList.add("active");
 
+
+
+
+//마우스오버
+
+const aTag = document.querySelectorAll("a");
+
+for(let a of aTag){
+    a.addEventListener('mouseover', ()=>{
+        a.classList.add("hover");
+    });
+    a.addEventListener('mouseout', ()=>{
+        a.classList.remove("hover");
+    })
+}
+
+const imgBannerHover = document.querySelectorAll("#imgBanner .box");
+
+for(let i of imgBannerHover){
+    i.addEventListener('mouseover', ()=>{
+        i.classList.add("hover");
+    })
+    i.addEventListener('mouseout', ()=>{
+        i.classList.remove("hover");
+    })
+}
+
+
+
+
