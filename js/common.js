@@ -143,20 +143,32 @@ menuIcon.addEventListener('click', ()=>{
 const width = ()=>{
     return innerWidth;
 }
+const carouselBtnSel = document.querySelectorAll(".carouselBtn button");
+const carouselBtnImgSel = document.querySelectorAll(".carouselBtn img");
 const carouselControl = {
     deactive : ()=>{
         const innerItemSel = document.querySelectorAll(".inner-item");
         for(let cc of innerItemSel){
             cc.classList.remove("carousel-item");
-            document.querySelector(".inner-item").closest(".slide").querySelector(".carouselBtn").style.display = "none";
+        };
+        for(let ci of carouselBtnImgSel){
+            ci.style.display = "none";
+        };
+        for(let cb of carouselBtnSel){
+            cb.style.display = "none";
         };
     },
     active : ()=>{
         const innerItemSel = document.querySelectorAll(".inner-item");
         for(let cc of innerItemSel){
             cc.classList.add("carousel-item");
-            document.querySelector(".inner-item").closest(".slide").querySelector(".carouselBtn").style.display = "block";
-    }
+        }
+        for(let ci of carouselBtnImgSel){
+            ci.style.display = "block";
+        };
+        for(let cb of carouselBtnSel){
+            cb.style.display = "block";
+        };
     },
 };
 

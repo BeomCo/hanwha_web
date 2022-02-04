@@ -2,6 +2,12 @@
 
 
 @media(min-width: 768px){
+    /* common */
+    .carousel-inner::after{
+        content: none;
+    }
+
+
     /* main */
     .wrap{
         font-size: 1rem;
@@ -67,6 +73,9 @@
     }
 
 
+
+
+
     /* company */
     #vision .wrap .head{
         font-size: 1.5rem;
@@ -80,6 +89,7 @@
         height: 228px;
         background-image: url(../img/info/img.png);
         position: relative;
+        justify-content: flex-start;
     }
     #manage .wrap ul li:nth-of-type(1){
         background-position: 0% 0;
@@ -109,5 +119,107 @@
         justify-content: center;
         margin-bottom: 20px;
     }
+
+
+
+
+    /* business */
+    article #project .wrap #carousel #projectCarousel .carousel-inner{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    article #project .wrap #carousel #projectCarousel .carousel-inner .inner-item{
+        width: calc(50% - 20px);
+    }
+    #facility .wrap .outer .row{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+    /* prcenter */
+    #grantCont .wrap #grantCarousel .carousel-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    #grantCont .wrap #grantCarousel .carousel-inner .inner-item{
+        width: calc(100% / 3 - 20px);
+    }
+    #grantCont .wrap #grantCarousel .carousel-inner .inner-item .img{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+    }
+    #grantCont .wrap #grantCarousel .carousel-inner .inner-item .txt p{
+        text-align: center;
+    }
+
+
+    /* career */
+    #typeCont .wrap .title .line{
+        margin: 20px 0;
+        margin-bottom: 40px;
+    }
+
+    #typeCarousel .carousel-inner{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+    #typeCarousel .carousel-inner .inner-item{
+        width: calc(100% / 3 - 40px);
+        text-align: center;
+    }
+    #typeCarousel .carousel-inner .inner-item .img{
+        width: 140px;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+    #typeCarousel .carousel-inner .inner-item .head{
+        margin-bottom: 20px;
+    }
+    #typeCarousel .carousel-inner .inner-item .body{
+        height: 200px;
+    }
+    #careersBanner{
+        margin-top: 40px;
+    }
+    #careersBanner .wrap{
+        display: flex;
+    }
+    #careersBanner .wrap .img{
+        display: flex;
+        align-items: center;
+    }
+    #careersBanner .wrap .img img{
+        height: 200px;
+    }
+    #careersBanner .wrap .txt{
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+
+    #careersDevelop .wrap #developCarousel .carousel-inner{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+    #careersDevelop .wrap #developCarousel .img{
+        height: 140px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #careersDevelop .wrap #developCarousel .img .imgWrap h4{
+        font-size: 1em;
+    }
+    #careersDevelop .wrap #developCarousel .carousel-inner .inner-item{
+        width: calc(100% / 3 - 20px);
+    }
+    #careersDevelop .wrap #developCarousel .img .imgWrap .imgBox{
+        width: 64px;
+        height: 64px;
+    }
+    
 
 }

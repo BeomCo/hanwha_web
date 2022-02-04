@@ -5,7 +5,7 @@ let typeCase = "";
 for(let t in careersType){
     typeCase += `
         
-        <li class="carousel-item">
+        <li class="carousel-item inner-item">
             <div class="itemWrap">
                 <div class="img" style="background-image:url(./img/careers/${careersType[t][0]})" alt="${careersType[t][2]}"></div>
                 <div class="head">
@@ -27,7 +27,7 @@ typeCarouselInner.querySelector(".carousel-item:nth-child(1)").classList.add("ac
 
 const typeCarousel_sel = document.querySelector('#typeCarousel')
 const typeCarousel = new bootstrap.Carousel(typeCarousel_sel, {
-    interval: 4000,
+    interval: 5000,
     wrap: true,
     
 });
@@ -38,7 +38,7 @@ let developCase = "";
 
 for(let d in careersDevelopProgramTitle){
     developCase += `
-    <div class="carousel-item">
+    <div class="carousel-item inner-item">
 
         <div class="img" style="background-image:url(./img/careers/${careersDevelopProgramTitle[d][2]}">
             <div class="imgWrap">

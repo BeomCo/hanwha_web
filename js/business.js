@@ -36,10 +36,10 @@ for(let p in projectItem){
 projectCarousel_inner.innerHTML = projectCase;
 
 
-const peojectCarousel_sel = document.querySelector('#projectCarousel')
-const peojectCarousel = new bootstrap.Carousel(peojectCarousel_sel, {
-    interval: 5000,
-    wrap: false,
+const projectCarousel_sel = document.querySelector('#projectCarousel')
+const projectCarousel = new bootstrap.Carousel(projectCarousel_sel, {
+    // interval: 5000,
+    wrap: true,
     
 });
 

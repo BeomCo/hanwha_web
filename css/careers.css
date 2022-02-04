@@ -44,11 +44,11 @@ main .wrap h3{
 #typeCarousel .carousel-inner{
     width: 100%;
 }
-#typeCarousel .carousel-inner .carousel-item{
+#typeCarousel .carousel-inner .inner-item{
     width: 100%;
     text-align: center;
 }
-#typeCarousel .carousel-inner .carousel-item .itemWrap{
+#typeCarousel .carousel-inner .inner-item .itemWrap{
     width: 100%;
     height: 100%;
     display: flex;
@@ -56,34 +56,34 @@ main .wrap h3{
     justify-content: space-between;
     align-items: center;
 }
-#typeCarousel .carousel-inner .carousel-item .img{
-    width: 240px;
-    height: 240px;
+#typeCarousel .carousel-inner .inner-item .img{
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     background-size: cover;
     background-position: 50% 50%;
     margin-bottom: 40px;
 }
-#typeCarousel .carousel-inner .carousel-item .head{
+#typeCarousel .carousel-inner .inner-item .head{
     margin-bottom: 40px;
 }
-#typeCarousel .carousel-inner .carousel-item .head h5{
+#typeCarousel .carousel-inner .inner-item .head h5{
     font-size: 1em;
     margin-bottom: 5px;
 }
-#typeCarousel .carousel-inner .carousel-item .head h3{
+#typeCarousel .carousel-inner .inner-item .head h3{
     font-size: 1.4em;
     color: #f47321;
 }
-#typeCarousel .carousel-inner .carousel-item .body{
+#typeCarousel .carousel-inner .inner-item .body{
     height: 200px;
 }
-#typeCarousel .carousel-inner .carousel-item .body h4{
+#typeCarousel .carousel-inner .inner-item .body h4{
     margin-bottom: 20px;
     font-size: 1em;
     line-height: 1.6;
 }
-#typeCarousel .carousel-inner .carousel-item .body p{
+#typeCarousel .carousel-inner .inner-item .body p{
     font-size: 0.9em;
     line-height: 1.6;
     color: #555;
@@ -95,7 +95,7 @@ main .wrap h3{
 .carouselBtn{
     width: 100%;
     position: absolute;
-    top: 120px;
+    top: 75px;
 }
 
 
@@ -184,6 +184,10 @@ main .wrap h3{
     background-position: 50% 50%;
     margin-bottom: 20px;
 }
+#careersDevelop .wrap #developCarousel .img .imgWrap h4{
+    font-size: 1.2em;
+    text-align: center;
+}
 #careersDevelop .wrap #developCarousel .innertxt{
     margin-bottom: 20px;
 }
@@ -209,7 +213,7 @@ main .wrap h3{
 }
 #careersDevelop .wrap #developCarousel .innertxt .top h4{
     line-height: 2;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 #careersDevelop .wrap #developCarousel .innertxt .top .btn{
     display: block;

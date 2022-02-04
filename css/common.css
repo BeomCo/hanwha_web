@@ -57,6 +57,7 @@ h3{
 }
 .navList .wrap{
     text-align: right;
+    text-transform: capitalize;
 }
 .navList .wrap a{
     font-size: 0.9em;

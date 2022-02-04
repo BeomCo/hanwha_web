@@ -155,7 +155,7 @@ main .wrap h3{
 #privacy .wrap .progressBar ul li::before{
     content: "";
     display: block;
-    width: 5%;
+    width: 20px;
     height: 100%;
     background-image: url(../img/customer/txt_bar_left_grey.png);
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ main .wrap h3{
 #privacy .wrap .progressBar ul li::after{
     content: "";
     display: block;
-    width: 5%;
+    width: 20px;
     height: 100%;
     background-image: url(../img/customer/txt_bar_right_grey.png);
     background-repeat: no-repeat;
