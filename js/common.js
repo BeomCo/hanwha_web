@@ -129,7 +129,7 @@ const menuIcon = document.querySelector(".menu");
 const slideMenu = document.querySelector("#slideMenu");
 
 function slideMenu_main(){
-    let chk = slideMenu.classList.contains("active");
+    const chk = slideMenu.classList.contains("active");
     if(!chk){
         slideMenu.classList.add("active");
     }else{
@@ -140,6 +140,12 @@ function slideMenu_main(){
 menuIcon.addEventListener('click', ()=>{
     slideMenu_main();
 });
+
+
+const slideCloseBtn = document.querySelector("header #slideMenu .wrap .side .menu");
+slideCloseBtn.addEventListener('click', ()=>{
+    slideMenu.classList.remove("active");
+})
 
 
 //캐러셀 반응형
@@ -228,8 +234,6 @@ for(let n of slideNav){
     })
 }
 
-const slideCloseBtn = document.querySelector("header #slideMenu .wrap .side .menu");
-slideCloseBtn.addEventListener('click', '')
 
 
 //top 버튼
