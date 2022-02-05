@@ -1,8 +1,8 @@
 const navHtmlSource = `
 <ul>
     <li>
-            <div class="line"></div>
-            <a class="hanec" href="./company.html">hanwha e&c</a>
+            <a class="hanec" href="./company.html">hanwha e&c
+            </a>
         <ul>
             <li>
                 <a href="./company.html">경영이념</a>
@@ -28,8 +28,9 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-            <div class="line"></div>
-            <a href="./business.html">business</a>
+            
+            <a href="./business.html">business
+            </a>
         <ul>
             <li>
                 <a href="./business.html">토목 사업</a>
@@ -49,8 +50,9 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-            <div class="line"></div>
-            <a href="./prcenter.html">pr center</a>
+            
+            <a href="./prcenter.html">pr center
+            </a>
         <ul>
             <li>
                 <a href="./prcenter.html">사회공헌</a>
@@ -76,8 +78,9 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-            <div class="line"></div>
-            <a href="./careers.html">careers</a>
+            
+            <a href="./careers.html">careers
+            </a>
         <ul>
             <li>
                 <a href="./careers.html">인재개발</a>
@@ -97,8 +100,9 @@ const navHtmlSource = `
         </ul>
     </li>
     <li>
-            <div class="line"></div>
-            <a href="./customer.html">customer</a>
+            
+            <a href="./customer.html">customer
+            </a>
         <ul>
 
         <li>
@@ -126,7 +130,7 @@ const navHtmlScrollSource = `
             <a class="hanec" href="./company.html">hanwha e&c</a>
             <span class="menuIcon">＋</span>
         </span>
-        <ul>
+        <ul class="innerUl">
             <li>
                 <a href="./company.html">경영이념</a>
             </li>
@@ -155,7 +159,7 @@ const navHtmlScrollSource = `
             <a href="./business.html">business</a>
             <span class="menuIcon">＋</span>
         </span>
-        <ul>
+        <ul class="innerUl">
             <li>
                 <a href="./business.html">토목 사업</a>
             </li>
@@ -178,7 +182,7 @@ const navHtmlScrollSource = `
             <a href="./prcenter.html">pr center</a>
             <span class="menuIcon">＋</span>
         </span>
-        <ul>
+        <ul class="innerUl">
             <li>
                 <a href="./prcenter.html">사회공헌</a>
             </li>
@@ -207,7 +211,7 @@ const navHtmlScrollSource = `
             <a href="./careers.html">careers</a>
             <span class="menuIcon">＋</span>
         </span>
-        <ul>
+        <ul class="innerUl">
             <li>
                 <a href="./careers.html">인재개발</a>
             </li>
@@ -230,7 +234,7 @@ const navHtmlScrollSource = `
             <a href="./customer.html">customer</a>
             <span class="menuIcon">＋</span>
         </span>
-        <ul>
+        <ul class="innerUl">
 
         <li>
                 <a href="customer.html">고객문의</a>
@@ -270,6 +274,13 @@ const businessItem = [
     ["main_icon02_off.png", "둘러싼 한화건설의 모든 건축물들은 인간 중심의 첨단 기술을 바탕으로 예술성과 기능이 조화를 이룬 공간입니다. 최고의 효율성과 편의성이 구비된 공간 창조를 통해 행복한 생활과 쾌적한 여유까지 제공해 드립니다."],
     ["main_icon03_off.png", "한화건설이 창조하는 주거 공간에는 친환경적인 이상과 인간 중심의 주거 과학이 고스란히 살아 있습니다. 대한민국을 대표하는 최고 수준의 랜드마크에서 누리는 삶, 이 모든 꿈과 행복을 함께 나누고 싶습니다."],
     ["main_icon04_off.png", "발전 및 담수플랜트, 화공플랜트 등 국내 플랜트 사업의 선두 주자 한화건설은 사우디 현지법인을설립하여 각종 플랜트 공사를 성공적으로 수행하고 있으며, 중동 및 동남아시장 등으로 사업 영역을 확장하고 있습니다."],
+];
+
+const businessItemOnOff = [
+    ["main_icon01_on.png", "main_icon01_off.png"],
+    ["main_icon02_on.png", "main_icon02_off.png"],
+    ["main_icon03_on.png", "main_icon03_off.png"],
+    ["main_icon04_on.png", "main_icon04_off.png"],
 ];
 
 

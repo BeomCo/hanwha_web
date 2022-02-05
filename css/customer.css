@@ -73,6 +73,7 @@ main .wrap h3{
     background-color: #f47321;
     text-align: center;
     color: #fff;
+    transition: background-color 0.3s;
 }
 .dreamGreen .wrap .head .headLink a.hover{
     background-color: #555;
@@ -91,6 +92,7 @@ main .wrap h3{
     justify-content: space-evenly;
     border: 1px solid #888;
     color: #000;
+    transition: color 0.3s;
 }
 .dreamGreen .wrap .body .box.hover{
     color: #f47321;
@@ -308,6 +310,10 @@ main .wrap h3{
     line-height: 40px;
     background-color: #f47321;
     color: #fff;
+    transition: background-color 0.3s;
+}
+#cert .wrap .body a.hover{
+    background-color: #555;
 }
 
 #cert .wrap .certBtn{
@@ -327,3 +333,4 @@ main .wrap h3{
 #cert .wrap .certBtn a.cancel{
     background-color: #555555;
 }
+

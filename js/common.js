@@ -26,14 +26,17 @@ const headerHtml = `
             <div id="slideMenu">
 
                 <div class="wrap">
-                    <div class="logo">
-                        <a href="./">
-                            <img src="./img/logo.png" alt="Hanwha Logo"></a>
+                    <div class="head">
+                        <div class="logo">
+                            <a href="./">
+                                <img src="./img/logo.png" alt="Hanwha Logo"></a>
+                            </div>
+                            <div class="side">
+                                <div class="menu"></div>
+                            </div>
                         </div>
+
                         <nav class="nav slideNav"></nav>
-                        <div class="side">
-                            <div class="menu"></div>
-                        </div>
                     </div>
 
                 </div>
@@ -147,6 +150,7 @@ const carouselBtn = document.querySelectorAll(".carouselBtn");
 const carouselBtnSel = document.querySelectorAll(".carouselBtn button");
 const carouselBtnImgSel = document.querySelectorAll(".carouselBtn img");
 const carouselImgFix = document.querySelectorAll("#carouselExampleControls .carouselBtn img");
+console.log(carouselImgFix)
 
 const carouselControl = {
     deactive : ()=>{
@@ -164,7 +168,7 @@ const carouselControl = {
             cf.style.display = "block";
         };
         for(let cbd of carouselBtn){
-            cbd.style.zIndex = "-1";
+            cbd.style.zIndex = "1";
         }
     },
     active : ()=>{
@@ -199,7 +203,33 @@ addEventListener('load', ()=>{
     }
 });
 
+//slideNav
+const slideNav = document.querySelectorAll(".slideNav .menuIcon");
 
+const FinnerUlChk = ()=>{
+    const innerUl = document.querySelectorAll(".innerUl");
+        for(let u of innerUl){
+            u.classList.remove("active");
+            u.closest("li").querySelector(".menuIcon").innerText = "+";
+        }
+};
+
+for(let n of slideNav){
+    n.addEventListener('click', ()=>{
+        const innerUlChk = n.closest("li").querySelector(".innerUl").classList.contains("active")
+        if(!innerUlChk){
+            FinnerUlChk();
+            n.closest("li").querySelector(".innerUl").classList.add("active");
+            n.innerText = "-";
+        }else{
+            n.closest("li").querySelector(".innerUl").classList.remove("active");
+            n.innerText = "+";
+        }
+    })
+}
+
+const slideCloseBtn = document.querySelector("header #slideMenu .wrap .side .menu");
+slideCloseBtn.addEventListener('click', '')
 
 
 //top 버튼
@@ -209,7 +239,7 @@ const mainSection = document.querySelector("header").offsetTop;
 
 
 for(let u of upArrow){
-    u.addEventListener('click', (e)=>{
+    u.addEventListener('click', ()=>{
             clickDownScroll();
     })
 }
