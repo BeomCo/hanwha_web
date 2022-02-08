@@ -296,10 +296,7 @@
     align-items: center;
     color: #fff;
 }
-#banner .wrap .dark a.hover{
-    background-color: #f47321;
-    border: 1px solid #f47321;
-}
+
 
 #banner .wrap .dark .img{
     height: 20%;
@@ -310,7 +307,12 @@
     padding: 0 4%;
     color: #fff;
     border: 1px solid #fff;
-    line-height: calc(1.8rem - 2px)
+    line-height: calc(2rem - 2px);
+    transition: background-color 0.3s, border 0.3s
+}
+#banner .wrap .dark a.hover{
+    background-color: #f47321;
+    border: 1px solid #f47321;
 }
 
 #content{
