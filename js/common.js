@@ -253,4 +253,18 @@ function clickDownScroll(){
 
 
 
+const footerFamily = document.querySelector("footer .wrap .cont .link .family");
+
+footerFamily.addEventListener('click', ()=>{
+    const footerFamilyBody = document.querySelector("footer .wrap .cont .link .family .body");
+    const classChk = footerFamilyBody.classList.contains("active");
+
+    if(!classChk){
+        footerFamilyBody.classList.add("active");
+    }else{
+        footerFamilyBody.classList.remove("active");
+    }
+
+    
+})
 

@@ -425,7 +425,7 @@
 #content .wrap .contentBox .link li a.hover{
     background-color: #f47321;
     color: #fff;
-    border: 1px solid #555;
+    border: 1px solid #f47321;
 }
 #content .wrap .contentBox .link li a span{
     right: 0;
