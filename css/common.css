@@ -347,7 +347,8 @@ footer .wrap .cont .logo{
     align-items: center;
     margin-bottom: 20px;
 }
-footer .wrap .cont nav{}
+footer .wrap .cont nav{
+}
 footer .wrap .cont nav ul{
     display: flex;
     justify-content: space-around;
@@ -358,6 +359,9 @@ footer .wrap .cont nav ul li{
 footer .wrap .cont nav ul li a{
     font-size: 0.8em;
 }
+footer .wrap .cont nav ul li a.hover{
+    color: #f47321;
+}
 footer .wrap .cont nav .info{
     display: flex;
     flex-direction: column;
@@ -365,8 +369,14 @@ footer .wrap .cont nav .info{
     font-size: 0.8em;
     margin-bottom: 20px;
 }
+footer .wrap .cont nav .info a.hover{
+    color: #f47321;
+}
 footer .wrap .cont nav .info address{
     margin-bottom: 0;
+}
+footer .wrap .cont .linkBox{
+    width: 100%;
 }
 footer .wrap .cont .link{
     display: flex;
@@ -392,6 +402,7 @@ footer .wrap .cont .link ul li a{
     height: 100%;
     background-size: cover;
 }
+
 footer .wrap .cont .link ul li a.youtube{
     background-image: url(../img/sns.png);
     background-position: 0%;
@@ -417,8 +428,13 @@ footer .wrap .cont .link .family{
 footer .wrap .cont .link .family .body{
     position: absolute;
     top: -360px;
+    left: 50%;
+    transform: translateX(-50%);
     border: 1px solid #555;
     display: none;
+}
+footer .wrap .cont .link .family .body.active{
+    display: block;
 }
 footer .wrap .cont .link .family .head{
     cursor: pointer;

@@ -55,36 +55,38 @@ const footerHtml = `
             <a href="./">
                 <img src="./img/footer_logo.png" alt=""></a>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./">해외현장 임직원가족</a>
-                    </li>
-                    <li>
-                        <a href="./">개인정보 처리방침</a>
-                    </li>
-                    <li>
-                        <a href="./">공정거래 사업지침</a>
-                    </li>
-                    <li>
-                        <a href="./">협력업체 시스템</a>
-                    </li>
-                </ul>
-                <div class="info">
-                    <address>서울시 영등포구 여의대로 24 전경련회관</address>
-                    <div class="tel">
-                        <span>TEL
-                        </span>
-                        <a href="tel:02255600">02.2055.6000</a>
-                        <span>
-                            /
-                        </span>
-                        <a href="tel:0807292400">080.729.2400</a>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./">해외현장 임직원가족</a>
+                        </li>
+                        <li>
+                            <a href="./">개인정보 처리방침</a>
+                        </li>
+                        <li>
+                            <a href="./">공정거래 사업지침</a>
+                        </li>
+                        <li>
+                            <a href="./">협력업체 시스템</a>
+                        </li>
+                    </ul>
+                    <div class="info">
+                        <address>서울시 영등포구 여의대로 24 전경련회관</address>
+                        <div class="tel">
+                            <span>TEL
+                            </span>
+                            <a href="tel:02255600">02.2055.6000</a>
+                            <span>
+                                /
+                            </span>
+                            <a href="tel:0807292400">080.729.2400</a>
+                        </div>
+                        <p>Copyright 2022 Hanwha Engineering & Construction corp.</p>
                     </div>
-                    <p>Copyright 2022 Hanwha Engineering & Construction corp.</p>
-                </div>
-            </nav>
-            <div class="link">
+                </nav>
+            <div class="linkBox">
+                <div class="link">
                 <ul>
                     <li>
                         <a href="./" class="youtube"></a>
@@ -106,7 +108,11 @@ const footerHtml = `
                             alt="family site"
                             style="height: 28px"
                             class="head"></div>
-                    </div>
+                </div>
+            </div>
+            
+            </div>
+                
 
                 </div>
             </div>
@@ -156,7 +162,7 @@ const carouselBtn = document.querySelectorAll(".carouselBtn");
 const carouselBtnSel = document.querySelectorAll(".carouselBtn button");
 const carouselBtnImgSel = document.querySelectorAll(".carouselBtn img");
 const carouselImgFix = document.querySelectorAll("#carouselExampleControls .carouselBtn img");
-console.log(carouselImgFix)
+// console.log(carouselImgFix)
 
 const carouselControl = {
     deactive : ()=>{
@@ -253,11 +259,12 @@ function clickDownScroll(){
 
 
 
-const footerFamily = document.querySelector("footer .wrap .cont .link .family");
-
+const footerFamily = document.querySelector("footer .wrap .cont .right .link .family");
+// console.log(footerFamily);
 footerFamily.addEventListener('click', ()=>{
-    const footerFamilyBody = document.querySelector("footer .wrap .cont .link .family .body");
+    const footerFamilyBody = document.querySelector("footer .wrap .cont .right .link .family .body");
     const classChk = footerFamilyBody.classList.contains("active");
+    // console.log(footerFamilyBody);
 
     if(!classChk){
         footerFamilyBody.classList.add("active");
